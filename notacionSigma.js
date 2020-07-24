@@ -25,7 +25,9 @@ if (z < 1) {
 if (n > a || n < 0) {
     console.log('N no puede ser mayor que A ni menor que cero')
 
+}else{
     y = prompt('introduzca Y ,debe ser mayor que 0 y mayor que n');
+
 }
 
 if (y < 0 || y < n) {
