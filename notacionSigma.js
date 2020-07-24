@@ -1,0 +1,1 @@
+console.log('sumatoria con notación sigma')
