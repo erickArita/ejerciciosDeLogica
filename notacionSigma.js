@@ -35,10 +35,13 @@ if (y < 0 || y < n) {
 // ciclo  para 
 for (let i = 1; i < z; i++) {                                       //declaramos i = 1 ;llega hasta que sea  i= z ;si aumenta 1 i 
 
-    let resultado = ((y + n ^ z) / ((n * (n - 1)) ^ y)) ^ a 
+    for (let fac = n; n > 0; --fac) {
 
-    console.log(resultado)
-    
-    --n                                                             //resta 1  a n por cada iteracion 
-    
+        let resultado = ((y + n ^ z) / ((n * fac) ^ y)) ^ a
+
+        console.log(resultado)
+
+        --n                                                             //resta 1  a n por cada iteracion 
+
+    }
 }
